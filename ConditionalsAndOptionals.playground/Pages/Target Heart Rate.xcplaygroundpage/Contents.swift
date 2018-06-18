@@ -11,5 +11,6 @@ let targetLowerBound = 120
 let targetUpperBound = 150
 let currentHR = 147
 
+let isInTarget: Bool = (currentHR >= targetLowerBound && currentHR <= targetUpperBound)
 
 //: [Previous](@previous)  |  page 5 of 9  |  [Next: Heart Rate Zones](@next)
