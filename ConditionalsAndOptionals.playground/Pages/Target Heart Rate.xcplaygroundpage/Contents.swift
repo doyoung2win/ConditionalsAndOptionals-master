@@ -9,8 +9,17 @@
  */
 let targetLowerBound = 120
 let targetUpperBound = 150
-let currentHR = 147
+let currentHR = 151
 
-let isInTarget: Bool = (currentHR >= targetLowerBound && currentHR <= targetUpperBound)
+let isInTarget = currentHR >= targetLowerBound && currentHR <= targetUpperBound
+let isBelowTarget = currentHR < targetLowerBound
+let isAboveTarget = currentHR > targetUpperBound
 
+if isBelowTarget {
+    print("You're doing great, but try to push it a bit!")
+} else if isInTarget {
+    print("You're right on track!")
+} else if isAboveTarget {
+    print("Youre on fire! Slow it down just a bit!")
+}
 //: [Previous](@previous)  |  page 5 of 9  |  [Next: Heart Rate Zones](@next)
